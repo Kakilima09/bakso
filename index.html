@@ -18,7 +18,7 @@
                     Bakso Pak Joko
                 </div>
                 <nav>
-                    <ul>
+                    <ul id="nav-menu">
                         <li><a href="#home">Beranda</a></li>
                         <li><a href="#about">Tentang Kami</a></li>
                         <li><a href="#menu">Menu</a></li>
@@ -26,9 +26,9 @@
                         <li><a href="#contact">Kontak</a></li>
                     </ul>
                 </nav>
-                <div class="mobile-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
+                <button class="mobile-menu" id="mobile-menu-btn" aria-label="Toggle Menu">
+                    <i class="fas fa-bars" id="menu-icon"></i>
+                </button>
             </div>
         </div>
     </header>
@@ -41,6 +41,31 @@
             <a href="#menu" class="btn">Lihat Menu</a>
         </div>
     </section>
+    <div class="chat-btn" id="chatBtn">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+
+    <!-- Chat Box -->
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            <h3>Live Chat Bakso Pak Joko</h3>
+            <button class="close-chat" id="closeChat">&times;</button>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="chat-message admin">
+                <div class="message-content">
+                    Halo! Selamat datang di Bakso Pak Joko. Ada yang bisa kami bantu?
+                </div>
+                <div class="message-time">10:00</div>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chatInput" placeholder="Ketik pesan Anda..." autocomplete="off">
+            <button class="send-btn" id="sendBtn">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
 
     <!-- About Section -->
     <section class="about" id="about">
@@ -230,8 +255,11 @@
                     <p>DKI Jakarta, Indonesia</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 Bakso Pak Joko. All Rights Reserved.</p>
+            <div class="chat-footer">
+                <input type="text" id="chatInput" placeholder="Ketik pesan Anda..." autocomplete="off">
+                <button class="send-btn" id="sendBtn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
             </div>
         </div>
     </footer>
